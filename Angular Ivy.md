@@ -2,7 +2,7 @@
 tags: [Angular/Ivy]
 title: Angular Ivy
 created: '2023-08-29T06:41:13.378Z'
-modified: '2023-08-29T15:25:20.642Z'
+modified: '2023-08-29T15:27:50.172Z'
 ---
 
 # Angular Ivy
@@ -21,13 +21,13 @@ Moving parts:
 - Runtime: supports rendering & CD in the browser
 
 NG decorators get compiled to respective **static fields** on the types that are decorated, e.g.:
-- @Component --> _ComponentClass_.**ɵcmp** (previously _ngComponentDef_)
-- @Directive --> _DirectiveClass_.**ɵdir** (previously _ngDirectiveDef_)
-- @Injectable --> _ServiceClass_.**ɵprov** (previously _ngInjectableDef_)
+- @Component --> _ComponentClass_.**ɵcmp**
+- @Directive --> _DirectiveClass_.**ɵdir**
+- @Injectable --> _ServiceClass_.**ɵprov**
 
 ### Factory function
 
-`SomeClass.ɵfac` (previously `SomeClass.ngSomeDef.factory`) property.
+`SomeClass.ɵfac` property.
 
 Responsible for creating instances of the class.
 
@@ -35,7 +35,7 @@ Injected class Ctor dependencies become calls to `ng.inject(...)` internal fn. O
 
 ### Component template function
 
-`@Component.template` gets compiled to `ComponentClass.ngComponentDef.template` property &mdash; the **template function**
+`@Component.template` gets compiled to `ComponentClass.ɵcmp.template` property &mdash; the **template function**
 
 Its code is imperative, like Template Compiler.
 
