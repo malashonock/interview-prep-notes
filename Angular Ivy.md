@@ -2,7 +2,7 @@
 tags: [Angular/Ivy]
 title: Angular Ivy
 created: '2023-08-29T06:41:13.378Z'
-modified: '2023-08-29T15:27:50.172Z'
+modified: '2023-08-30T07:35:08.736Z'
 ---
 
 # Angular Ivy
@@ -68,7 +68,8 @@ Instructions are grouped into 2 sequences:
    - Instruction set is extensible: new features = new instructions + old ones still working
    - _Example forthcoming features:_
       - _Hybrid JIT+AOT apps_
-      - _Lazy-loading without the Router_
+      - _Lazy-loading without the Router (see [Jason Aden talk @AngularConnect 2018, starting 17:22](https://www.youtube.com/watch?v=MMPl9wHzmS4))_
+      - _Dynamic builds_
       - _Higher-order components_
       - _Templates written in Ivy IS rather than in HTML_
 
