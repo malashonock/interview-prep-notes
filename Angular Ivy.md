@@ -2,7 +2,7 @@
 tags: [Angular/Ivy]
 title: Angular Ivy
 created: '2023-08-29T06:41:13.378Z'
-modified: '2023-08-30T07:35:08.736Z'
+modified: '2023-09-07T07:16:39.057Z'
 ---
 
 # Angular Ivy
@@ -31,7 +31,8 @@ NG decorators get compiled to respective **static fields** on the types that are
 
 Responsible for creating instances of the class.
 
-Injected class Ctor dependencies become calls to `ng.inject(...)` internal fn. Once the injector provides all requested deps, the Ctor is called as normal.
+Injected class Ctor dependencies become calls to `ng.inject(...)` internal fn.  
+Once the injector provides all requested deps, the Ctor is called as normal.
 
 ### Component template function
 
@@ -98,6 +99,7 @@ View Engine used _global_ compilation, i.e. is had to compile all components fro
 
 Ivy uses _incremental_ compilation: libs (_e.g. NG Material_) are AOT compiled before publishing to npm.
 
-Ivy code is safe to ship to npm, because it follows the locality principle. E.g., for `@Input('publicName') privateName: any`, Ivy generates template fn instruction like `ng.elementProperty(1, 'publicName', ng.bind(ctx.value))` which relies on public API of the component.
+Ivy code is safe to ship to npm, because it follows the locality principle.  
+E.g., for `@Input('publicName') privateName: any`, Ivy generates template fn instruction like `ng.elementProperty(1, 'publicName', ng.bind(ctx.value))` which relies on public API of the component.
 
 

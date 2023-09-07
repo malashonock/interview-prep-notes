@@ -2,15 +2,15 @@
 tags: [Angular/debugging]
 title: Angular debugging tips
 created: '2023-08-29T14:54:26.029Z'
-modified: '2023-09-07T07:11:48.024Z'
+modified: '2023-09-07T07:15:47.910Z'
 ---
 
 # Angular debugging tips
 
 #### Inspector shortcuts
 
-`$0` refers to the DOM element clicked upon on the browser Inspector tab
-`$ng0` refers to the NG element clicked upon on the NG dev tools tab
+`$0` refers to the DOM element clicked upon on the browser Inspector tab.  
+`$ng0` refers to the NG element clicked upon on the NG dev tools tab.
 
 #### Get NG component from DOM element
 

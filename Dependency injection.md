@@ -2,15 +2,15 @@
 tags: [Angular/DI]
 title: Dependency injection
 created: '2023-09-05T11:51:47.994Z'
-modified: '2023-09-05T21:43:01.905Z'
+modified: '2023-09-07T07:17:36.193Z'
 ---
 
 # Dependency injection
 
 Usually, a dependency = a service.
 
-Providing = registering a dep with an injector.
-Injecting = requesting a dep from NG DI system.
+Providing = registering a dep with an injector.  
+Injecting = requesting a dep from NG DI system.  
 Injector = intermediary b/w deps providers and deps consumers.
 
 ## Providing deps
@@ -66,7 +66,7 @@ When a component instance is destroyed, so is the injected dep instance.
 
 ### In `@Component.viewProviders`
 
-Dep will be available to consumers within the component `LView`.
+Dep will be available to consumers within the component `LView`.  
 Dep will not be visible to content projected by the parent.
 
 
@@ -177,7 +177,7 @@ Module injectors hierarchy:
 
 ### Element injectors
 
-Created implicitly for every DOM element.
+Created implicitly for every DOM element.  
 Empty by default, unless configured via `@Component.providers` or `@Directive.providers`.
 
 

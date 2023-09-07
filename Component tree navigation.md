@@ -2,7 +2,7 @@
 tags: [Angular/DI]
 title: Component tree navigation
 created: '2023-09-05T09:30:01.862Z'
-modified: '2023-09-07T06:52:52.553Z'
+modified: '2023-09-07T07:16:49.942Z'
 ---
 
 # Component tree navigation
@@ -13,7 +13,7 @@ modified: '2023-09-07T06:52:52.553Z'
 
 NG component instances don't have direct references to their parent or child components &mdash; the relation is indirect, i.e. via the component's **view** object.
 
-Each component instance has a _host view_.
+Each component instance has a _host view_.  
 A component instance can also have _embedded view(s)_.
 
 Host view + embedded views comprise the view hierarchy for a given component.
