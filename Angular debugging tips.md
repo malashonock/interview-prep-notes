@@ -1,7 +1,8 @@
 ---
+tags: [Angular/debugging]
 title: Angular debugging tips
 created: '2023-08-29T14:54:26.029Z'
-modified: '2023-08-30T07:12:04.350Z'
+modified: '2023-09-07T07:11:48.024Z'
 ---
 
 # Angular debugging tips
