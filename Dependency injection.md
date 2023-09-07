@@ -2,7 +2,7 @@
 tags: [Angular/DI]
 title: Dependency injection
 created: '2023-09-05T11:51:47.994Z'
-modified: '2023-09-07T07:17:36.193Z'
+modified: '2023-09-07T07:31:44.551Z'
 ---
 
 # Dependency injection
@@ -221,7 +221,38 @@ Lookup stops once DI finds a provider, or if it reaches the `NullInjector`.
 To facilitate understanding, the following mental model can be helpful:
 
 ```
-<Root #LView>
+<root #LView> // created implicitly
+  <app-root>
+    <app-root's #LView>
+      <parent> // ParentComponent
+        <parent's #LView>
+          <div>
+            Projected content
+            <ng-content></ng-content> // 2nd child's slot
+          </div>          
+        </parent's #LView>
+        <!-- Notice projected child is outside parent's #LView -->
+        <child> // 1st ChildComponent, content child
+          <child's #LView>
+          </child's #LView>
+        </child>
+      <parent>
+      <child> // 2nd ChildComponent, view child
+        <child's #LView>
+          I am a child
+        </child's #LView>
+      </child>
+    </app-root's #LView>
+  </app-root>
+</root #LView>
+```
+
+**NB!** Projected content is part of projector's LView, not part of the container component's LView.
+
+Now, if we add DI providers and consumers:
+
+```
+<root #LView>
   <app-root // AppComponent
     @NgModule(AppModule) // AppModule (=root) injector
   >
@@ -239,7 +270,8 @@ To facilitate understanding, the following mental model can be helpful:
             <ng-content></ng-content> // 2nd child's slot
           </div>
         </parent's #LView>
-        <child> // 1st ChildComponent, view child
+        <!-- Notice projected child is outside parent's #LView -->
+        <child> // 1st ChildComponent, content child
           <child's #LView
             @Inject(SomeService) // Dep declared in ChildComponent
           >
@@ -247,7 +279,7 @@ To facilitate understanding, the following mental model can be helpful:
           </child's #LView>
         </child>
       <parent>
-      <child> // 2nd ChildComponent, content child
+      <child> // 2nd ChildComponent, view child
         <child's #LView
           @Inject(SomeService) // Dep declared in ChildComponent
         >
@@ -256,8 +288,6 @@ To facilitate understanding, the following mental model can be helpful:
       </child>
     </app-root's #LView>
   <app-root>
-</Root LView>
+</root LView>
 ```
-
-**NB!** Projected content is part of projector's LView, not part of the container component's LView.
 
