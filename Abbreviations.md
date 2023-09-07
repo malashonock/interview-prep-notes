@@ -8,7 +8,7 @@ modified: '2023-09-05T11:59:20.226Z'
 # Abbreviations
 
 Abbreviation | Full description
-- | -
+--- | ---
 NG | Angular
 CD | Change detection
 Ctor | Constructor
