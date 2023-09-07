@@ -1,8 +1,8 @@
 ---
-tags: [Angular/core]
+tags: [Angular/templates]
 title: ngTemplateOutlet
 created: '2023-09-05T08:23:36.275Z'
-modified: '2023-09-05T09:54:55.264Z'
+modified: '2023-09-07T06:52:55.211Z'
 ---
 
 # ngTemplateOutlet

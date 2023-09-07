@@ -1,7 +1,8 @@
 ---
+tags: [Angular]
 title: Why I prefer Angular
 created: '2023-09-07T06:36:06.250Z'
-modified: '2023-09-07T06:45:15.883Z'
+modified: '2023-09-07T06:51:29.039Z'
 ---
 
 # Why I prefer Angular

@@ -1,8 +1,8 @@
 ---
-tags: [Angular/core]
+tags: [Angular/DI]
 title: Component tree navigation
 created: '2023-09-05T09:30:01.862Z'
-modified: '2023-09-05T09:54:45.558Z'
+modified: '2023-09-07T06:52:52.553Z'
 ---
 
 # Component tree navigation
