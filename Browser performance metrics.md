@@ -1,7 +1,8 @@
 ---
+tags: [Performance]
 title: Browser performance metrics
 created: '2023-09-08T06:55:39.446Z'
-modified: '2023-09-08T07:00:04.582Z'
+modified: '2023-09-08T07:01:16.673Z'
 ---
 
 # Browser performance metrics
