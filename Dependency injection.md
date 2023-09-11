@@ -2,7 +2,7 @@
 tags: [Angular/DI]
 title: Dependency injection
 created: '2023-09-05T11:51:47.994Z'
-modified: '2023-09-07T07:31:44.551Z'
+modified: '2023-09-11T08:21:12.849Z'
 ---
 
 # Dependency injection
@@ -33,7 +33,7 @@ Creates _a single instance_ of the dep that can be directly injected into _any_ 
 
 Registers dep with the `ModuleInjector` of the specified NgModule.
 
-#### `null` or `undefined`
+#### `null` or omitted
 
 Dep is not provided automatically. Must be added to `providers` array of a `@NgModule`, `@Component` or `@Directive`.
 
