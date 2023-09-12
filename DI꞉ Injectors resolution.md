@@ -1,158 +1,13 @@
 ---
 tags: [Angular/DI]
-title: Dependency injection
-created: '2023-09-05T11:51:47.994Z'
-modified: '2023-09-11T08:21:12.849Z'
+title: 'DI: Injectors resolution'
+created: '2023-09-12T09:02:35.005Z'
+modified: '2023-09-12T09:12:53.097Z'
 ---
 
-# Dependency injection
+# DI: Injectors resolution
 
-Usually, a dependency = a service.
-
-Providing = registering a dep with an injector.  
-Injecting = requesting a dep from NG DI system.  
 Injector = intermediary b/w deps providers and deps consumers.
-
-## Providing deps
-
-### In injectable class definition
-
-```
-@Injectable({ providedIn: ... })
-```
-
-**NB!** This way of providing deps, unlike the other, is tree-shakeable!
-
-#### `'root'`
-
-Registers dep with the root injector.
-
-Creates _a single instance_ of the dep that can be directly injected into _any_ class that needs it.
-
-#### ~~NgModule (deprecated)~~
-
-Registers dep with the `ModuleInjector` of the specified NgModule.
-
-#### `null` or omitted
-
-Dep is not provided automatically. Must be added to `providers` array of a `@NgModule`, `@Component` or `@Directive`.
-
-#### `platform`
-
-Registers dep with the platform injector.
-
-#### ~~`any` (deprecated)~~
-
-Provide one singleton instance of the dep across all eagerly-loaded modules, and create own instances for lazy-loaded modules.
-
-### In `@NgModule.providers`
-
-Dep will be available to:
-- all d/c/p declared in this module
-- all d/c/p declared in other modules within the same `ModuleInjector` applicable to this module
-
-_The same instance_ of the dep is shared across all applicable consumers.
-
-
-### In `@Component.providers` or `@Directive.providers`
-
-Dep will be available to:
-- all instances of this c/d
-- other c/d's _used in the template of this component_
-
-Each new instance of the component will receive _a new instance_ of dependency.
-
-When a component instance is destroyed, so is the injected dep instance.
-
-### In `@Component.viewProviders`
-
-Dep will be available to consumers within the component `LView`.  
-Dep will not be visible to content projected by the parent.
-
-
-## Injecting deps
-
-1. Inside a class **Ctor**
-2. Using the global `inject()` fn
-
-
-## Configuring deps
-
-### Configuring class deps
-
-`providers: [SomeServiceClass]` is shorthand for 
-```
-providers: [{ 
-    provider: SomeServiceClass,
-    useClass: SomeServiceClass
-}]
-```
-
-#### `useClass`
-
-Always creates _a new instance_ of the specified class via the `new` operator.
-
-Can be used to override a default class with an extended alternative: 
-`[{ provide: BaseClass, useClass: ExtendedBaseClass }]`
-
-#### `useExisting`
-
-Maps one DI token to another.
-In effect adds a DI alias to a dep.
-Creates several ways to access the same dep.
-
-#### `useFactory`
-
-**Use case:** when a dep resolution depends on some value known at runtime only.
-
-**NB!** Factory fn deps must be specified in `deps` property.
-
-```
-const someServiceFactory = (authService: AuthService) => {
-  return new SomeService(authService.isAuthenticated);
-};
-
-export const someServiceProvider: Provider = {
-  provide: SomeService,
-  useFactory: someServiceFactory,
-  deps: [AuthService],
-}
-```
-
-#### `useValue`
-
-Associates a fixed value with a DI token.
-
-Use cases:
-- configs
-- API urls
-- mocks in unit tests
-
-### Configuring non-class deps
-
-Define a custom token:
-`export const CUSTOM_TOKEN = InjectionToken<TValue>('token description');`
-
-Register (provide) the token at some level:
-`providers: [{ provide: CUSTOM_TOKEN, useValue: someValue }]`
-
-Inject into consumer as needed:
-`constructor(@Inject(CUSTOM_TOKEN) someValue: TValue) { }`
-
-**NB!** TS interfaces can't be used as provider tokens (in `Provider.provide` prop)
-
-**NB!** TS interfaces can't be injected as is, without `@Inject()`
-
-
-## Injection context
-
-- Ctor of a class instantiated by NG DI, e.g. `@Injectable` or `@Component`
-- Factory fn used in `Provider.useFactory` or passed to `InjectionToken` Ctor
-- In a fn run in injection context:
-  - NG-defined, e.g. router's `CanActivateFn`
-  - user-forced via `runInInjectionContext()` fn
-
-**NB!** `inject()` fn can only be run in an injection context.
 
 
 ## Injectors hierarchy
@@ -173,6 +28,8 @@ Module injectors hierarchy:
 4. **child injectors**: (optionally) created during the instantiation of lazy-loaded modules
 
 **NB!** Module injector is a _flattening_ of `@NgModule.providers` arrays of all the modules that can be reached via `@NgModule.imports`. Child injectors are only for lazy-loaded modules, which are not available when root injector is created.
+
+Use case for `PlatformInjector`: providing services shared by _microfrontends_.
 
 
 ### Element injectors
@@ -290,4 +147,3 @@ Now, if we add DI providers and consumers:
   <app-root>
 </root LView>
 ```
-

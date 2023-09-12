@@ -1,11 +1,11 @@
 ---
 tags: [Angular/DI]
-title: Component tree navigation
+title: 'DI: Component tree navigation'
 created: '2023-09-05T09:30:01.862Z'
-modified: '2023-09-07T07:16:49.942Z'
+modified: '2023-09-12T09:06:13.899Z'
 ---
 
-# Component tree navigation
+# DI: Component tree navigation
 
 [Navigate the component tree with DI](https://angular.io/guide/dependency-injection-navtree)
 
