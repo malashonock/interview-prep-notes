@@ -2,7 +2,7 @@
 tags: [Angular/DI]
 title: 'DI: Injectors resolution'
 created: '2023-09-12T09:02:35.005Z'
-modified: '2023-09-12T09:12:53.097Z'
+modified: '2023-09-18T12:17:15.047Z'
 ---
 
 # DI: Injectors resolution
@@ -14,7 +14,7 @@ Injector = intermediary b/w deps providers and deps consumers.
 
 There are 2 types of injectors:
 - `ModuleInjector`
-- `ElementInjector`
+- `NodeInjector` (pre-Ivy `ElementInjector`)
 
 
 ### Module injectors
@@ -32,17 +32,17 @@ Module injectors hierarchy:
 Use case for `PlatformInjector`: providing services shared by _microfrontends_.
 
 
-### Element injectors
+### Node injectors
 
-Created implicitly for every DOM element.  
+Created implicitly for every DOM element with an NG directive applied.  
 Empty by default, unless configured via `@Component.providers` or `@Directive.providers`.
 
 
 ### Injector resolution rules
 
 Precedence:
-1. Check this component's `ElementInjector`
-2. Look up parents' `ElementInjector`s chain
+1. Check this component's `NodeInjector`
+2. Look up parents' `NodeInjector`s chain
 3. Check the `ModuleInjector` of the module where this component is declared
 4. Look up parents' `ModuleInjector`s chain
 
@@ -55,16 +55,16 @@ Lookup stops once DI finds a provider, or if it reaches the `NullInjector`.
 - if dep is not resolved, returns `null` instead of throwing an error
 
 `@SkipSelf()`:
-- ignore own `ElementInjector`, i.e. ignore `providers` and `viewProviders` of this component
+- ignore own `NodeInjector`, i.e. ignore `providers` and `viewProviders` of this component
 - start lookup from this component's _parent_
 
 `@Self()`:
-- only look up in this c/d's `ElementInjector` (opposite of `@SkipSelf()`)
+- only look up in this c/d's `NodeInjector` (opposite of `@SkipSelf()`)
 - no further walking up the tree
 - _Use case:_ share dep instance between directives applied to the same element.
 
 `@Host()`:
-- start lookup from this c/d's `ElementInjector` (own `providers` and `viewProviders`)
+- start lookup from this c/d's `NodeInjector` (own `providers` and `viewProviders`)
 - if dep is not resolved, look up dep in parent (host) component LView, i.e. in host component `viewProviders`
 - no lookup in host component `providers`
 - no further walking up the tree
