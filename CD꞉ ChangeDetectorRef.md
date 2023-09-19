@@ -2,14 +2,14 @@
 tags: [Angular/CD]
 title: 'CD: ChangeDetectorRef'
 created: '2023-09-18T15:06:45.446Z'
-modified: '2023-09-19T07:39:44.834Z'
+modified: '2023-09-19T07:43:50.995Z'
 ---
 
 # CD: ChangeDetectorRef
 
 Base class that is used to intervene into the automatic CD.
 
-`ChangeDetectorRef` is abstract, actuall object that gets injected is instance of `ViewRef`, that inherits from `ChangeDetectorRef`.
+`ChangeDetectorRef` is abstract, actual object that gets injected is instance of `ViewRef`, that inherits from `ChangeDetectorRef`.
 
 ## `ChangeDetectorRef` API
 
