@@ -1,11 +1,11 @@
 ---
 tags: [Angular/templates]
-title: ngTemplateOutlet
+title: NgTemplateOutlet
 created: '2023-09-05T08:23:36.275Z'
-modified: '2023-09-07T06:52:55.211Z'
+modified: '2023-09-21T13:41:43.109Z'
 ---
 
-# ngTemplateOutlet
+# NgTemplateOutlet
 
 [Stephen Cooper talk @AngularConnect](https://www.youtube.com/watch?v=2SnVxPeJdwE)
 [My version with structural directives](https://stackblitz.com/edit/ngtemplateoutletcontext-xvzh2j?file=src%2Fapp%2Fmy-selector%2Fmy-selector.component.html)
