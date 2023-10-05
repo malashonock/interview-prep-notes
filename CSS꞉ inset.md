@@ -2,7 +2,7 @@
 tags: [CSS]
 title: 'CSS: inset'
 created: '2023-10-04T13:40:53.976Z'
-modified: '2023-10-04T13:43:11.470Z'
+modified: '2023-10-04T13:44:53.015Z'
 ---
 
 # CSS: inset
