@@ -2,7 +2,7 @@
 tags: [Angular]
 title: 'NG: Abbreviations'
 created: '2023-08-29T07:30:28.657Z'
-modified: '2023-10-04T13:35:56.970Z'
+modified: '2023-10-09T13:54:37.632Z'
 ---
 
 # NG: Abbreviations
@@ -18,5 +18,5 @@ fn | function
 d/c/p | directives/components/pipes
 RF(s) | reactive form(s)
 TDF(s) | template-driven form(s)
-
+TRV | template reference variable
 
