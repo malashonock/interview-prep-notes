@@ -1,11 +1,11 @@
 ---
-tags: [Angular/bindings]
-title: Property & attribute binding
+tags: [Angular/templates]
+title: 'NG: Templates: Property & attribute binding'
 created: '2023-10-09T14:08:03.529Z'
-modified: '2023-10-09T14:32:05.319Z'
+modified: '2023-10-10T13:43:48.428Z'
 ---
 
-# Property & attribute binding
+# NG: Templates: Property & attribute binding
 
 [Attributes and properties](https://javascript.info/dom-attributes-and-properties)
 

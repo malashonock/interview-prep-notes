@@ -1,11 +1,11 @@
 ---
-tags: [Angular/bindings]
-title: 'NG: Event binding'
+tags: [Angular/templates]
+title: 'NG: Templates: Event binding'
 created: '2023-09-12T14:16:56.882Z'
-modified: '2023-10-09T14:01:39.430Z'
+modified: '2023-10-10T13:43:28.356Z'
 ---
 
-# NG: Event binding
+# NG: Templates: Event binding
 
 [Event binding @NG docs](https://angular.io/guide/event-binding)
 [User input @NG docs](https://angular.io/guide/user-input)

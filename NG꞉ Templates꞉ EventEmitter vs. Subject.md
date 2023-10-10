@@ -1,11 +1,11 @@
 ---
-tags: [Angular/bindings, RxJs]
-title: 'NG: EventEmitter vs. Subject'
+tags: [Angular/templates, RxJs]
+title: 'NG: Templates: EventEmitter vs. Subject'
 created: '2023-10-09T13:28:25.826Z'
-modified: '2023-10-09T13:35:30.602Z'
+modified: '2023-10-10T13:43:38.511Z'
 ---
 
-# NG: EventEmitter vs. Subject
+# NG: Templates: EventEmitter vs. Subject
 
 NG `EventEmitter` extends `Subject`:
 - `EventEmitter#emit(...)` method calls `super.next(...)` under the hood
