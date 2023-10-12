@@ -1,21 +1,43 @@
 ---
-tags: [Angular/dynamic components]
-title: 'NG: NgTemplateOutlet'
+tags: [Angular/content projection, Angular/dynamic components]
+title: 'NG: Content projection: NgTemplateOutlet'
 created: '2023-09-05T08:23:36.275Z'
-modified: '2023-10-12T14:04:47.880Z'
+modified: '2023-10-12T15:05:19.588Z'
 ---
 
-# NG: NgTemplateOutlet
+# NG: Content projection: NgTemplateOutlet
 
 [Stephen Cooper talk @AngularConnect](https://www.youtube.com/watch?v=2SnVxPeJdwE)
 [My version with structural directives](https://stackblitz.com/edit/ngtemplateoutletcontext-xvzh2j?file=src%2Fapp%2Fmy-selector%2Fmy-selector.component.html)
 [Angular docs](https://angular.io/api/common/NgTemplateOutlet)
+
+`NgTemplateOutlet` is a structural directive that inserts an embedded view from a prepared `TemplateRef`.
 
 **Use case** &mdash; to facilitate the customization of a component by delegating template slots definition to the _consumers_ of the component.
 
 **NB!** `<ng-content>` sometimes is enough &mdash; but not always, e.g. in `*ngFor` loops:
 - will render only once
 - will render with incorrect context
+
+
+## `NgTemplateOutlet` API
+
+Available props:
+- `ngTemplateOutlet`: a `TemplateRef` from which an embedded view will be created
+- `ngTemplateOutletContext` (optionally): a context object with exported variables that can be used as local variables in the `TemplateRef`
+- `ngTemplateOutletInjector` (optionally): the injector to be used in the created embedded view
+
+With micro-syntax:
+```
+<some-element
+  *ngTemplateOutlet="
+    templateRef;
+    context: { ... };
+    injector: ...
+  "
+>
+</some-element>
+```
 
 
 ## Usage
@@ -39,7 +61,7 @@ In the component template:
 </some-container-component>
 ```
 
-Any element can host the directive, not only ng-container.
+Any element can host the directive, not only `<ng-container>`.
 
 `templateRef` is the reference to the template that will be rendered on that place (can be a `#templateVariable` or a class field of type `TemplateRef<...>`)
 
