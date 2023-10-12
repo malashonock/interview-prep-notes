@@ -1,8 +1,8 @@
 ---
-tags: [Angular/content projection, Angular/dynamic components]
+tags: [Angular/content projection]
 title: 'NG: Content projection: NgTemplateOutlet'
 created: '2023-09-05T08:23:36.275Z'
-modified: '2023-10-12T15:05:19.588Z'
+modified: '2023-10-12T15:08:20.586Z'
 ---
 
 # NG: Content projection: NgTemplateOutlet
