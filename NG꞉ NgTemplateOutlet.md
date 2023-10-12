@@ -1,8 +1,8 @@
 ---
-tags: [Angular/dynamic rendering]
+tags: [Angular/dynamic components]
 title: 'NG: NgTemplateOutlet'
 created: '2023-09-05T08:23:36.275Z'
-modified: '2023-10-10T13:45:32.152Z'
+modified: '2023-10-12T14:04:47.880Z'
 ---
 
 # NG: NgTemplateOutlet

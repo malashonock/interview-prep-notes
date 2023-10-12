@@ -1,8 +1,8 @@
 ---
-tags: [Angular/dynamic rendering, Angular/v16+]
+tags: [Angular/dynamic components, Angular/v16+]
 title: 'NG: NgComponentOutlet'
 created: '2023-09-21T13:41:12.088Z'
-modified: '2023-10-10T13:45:17.441Z'
+modified: '2023-10-12T14:04:31.160Z'
 ---
 
 # NG: [`NgComponentOutlet`](https://angular.io/api/common/NgComponentOutlet)
