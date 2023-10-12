@@ -2,7 +2,7 @@
 tags: [Angular/content projection]
 title: 'NG: Content projection: Overview'
 created: '2023-10-12T14:06:07.755Z'
-modified: '2023-10-12T14:51:57.986Z'
+modified: '2023-10-12T15:06:51.268Z'
 ---
 
 # NG: Content projection: Overview
@@ -60,7 +60,7 @@ modified: '2023-10-12T14:51:57.986Z'
 
 Usage of `<ng-content>` is not recommended, because the _projector_ **always** instantiates the content it projects, even if the _projectee_ has an `<ng-content>` wrapped in `*ngIf` or even no `<ng-content>` at all!
 
-Use `<ng-template>` with `ngTemplateOutlet` structural directive instead (see [NG: Content projection: NgTemplateOutlet](https://github.com/malashonock/interview-prep-notes/blob/main/NG%EA%9E%89%20ContentProjection%EA%9E%89%20NgTemplateOutlet.md) note).
+Use `<ng-template>` with `ngTemplateOutlet` structural directive instead (see [NG: Content projection: NgTemplateOutlet](https://github.com/malashonock/interview-prep-notes/blob/main/NG%EA%9E%89%20Content%20projection%EA%9E%89%20NgTemplateOutlet.md) note).
 
 
 ## `ngProjectAs`
