@@ -2,7 +2,7 @@
 tags: [Angular]
 title: 'NG: Abbreviations'
 created: '2023-08-29T07:30:28.657Z'
-modified: '2023-10-10T14:00:52.005Z'
+modified: '2023-10-12T07:50:10.971Z'
 ---
 
 # NG: Abbreviations
@@ -20,4 +20,5 @@ RF(s) | reactive form(s)
 TDF(s) | template-driven form(s)
 TRV | template reference variable
 TIV | template input variable
+LCH | lifecycle hooks
 
