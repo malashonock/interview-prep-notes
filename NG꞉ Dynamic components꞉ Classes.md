@@ -2,7 +2,7 @@
 tags: [Angular/dynamic components]
 title: 'NG: Dynamic components: Classes'
 created: '2023-10-13T07:39:26.618Z'
-modified: '2023-10-13T10:57:53.151Z'
+modified: '2023-10-13T11:00:34.475Z'
 ---
 
 # NG: Dynamic components: Classes
@@ -110,7 +110,7 @@ A utility class for manipulating templates and components dynamically.
 - if **injected in component Ctor**, its `_hostLView` will be set to the parent LView, i.e.:
   - to the root LView &mdash; for the root `AppComponent`
   - to the LView of the parent component &mdash; for any child component
-- if queried via `ViewChild(<TRV>, { read: ViewContainerRef })`, its `_hostLView` will be set to the LView of the current component
+- if queried via **`ViewChild(<TRV>, { read: ViewContainerRef })`**, its `_hostLView` will be set to the LView of the current component
 
 `ViewContainerRef` marks an insertion point _next to which_ embedded views will be rendered.
 
