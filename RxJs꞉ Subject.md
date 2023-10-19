@@ -2,7 +2,7 @@
 tags: [RxJs]
 title: 'RxJs: Subject'
 created: '2023-10-09T13:15:07.353Z'
-modified: '2023-10-09T13:28:00.864Z'
+modified: '2023-10-17T13:05:24.710Z'
 ---
 
 # RxJs: Subject
@@ -29,6 +29,8 @@ modified: '2023-10-09T13:28:00.864Z'
 = `BehaviorSubject`, plus:
 - keeps `N` latest emitted values in buffer (`N` is specified during the construction)
 - new observers receive the cached values upon subscription
+
+**Tip**: for an observable to behave as a `ReplaySubject`, one can use [RxJs `shareReplay(n)`](https://rxjs.dev/api/operators/shareReplay) operator factory.
 
 
 ## `AsyncSubject`
