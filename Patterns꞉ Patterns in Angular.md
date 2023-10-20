@@ -2,7 +2,7 @@
 tags: [NG/patterns, Patterns]
 title: 'Patterns: Patterns in Angular'
 created: '2023-10-19T15:07:39.221Z'
-modified: '2023-10-19T15:25:35.512Z'
+modified: '2023-10-20T09:10:25.745Z'
 ---
 
 # Patterns: Patterns in Angular
@@ -35,4 +35,16 @@ DI containers (injectors) are setup at various levels:
 Dependency registration in NG is called `providing` dependencies, e.g.:
 - in `providers` of an `@NgModule`, `@Directive` or `@Component`
 - in `provideIn` of an `@Injectable`
+
+
+## Factory Method
+
+Under the hood, NG compiles its decorators into static methods on the decorated classes.
+
+One of such methods is the factory method that embodies the component instantiation logic, including requesting all its dependencies from the DI system.
+
+By so doing, component construction logic, that is defined by the dependencies specified by the application programmer, are separated from the core NG logic embedded in the framework.
+
+Explicitly, we deal with component factories when creating components dynamically using the `ComponentFactoryResolver` and `ComponentFactory` APIs.
+
 
