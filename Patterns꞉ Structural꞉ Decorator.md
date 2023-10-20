@@ -2,7 +2,7 @@
 tags: [Patterns]
 title: 'Patterns: Structural: Decorator'
 created: '2023-10-20T12:36:47.658Z'
-modified: '2023-10-20T12:57:39.643Z'
+modified: '2023-10-20T13:09:45.571Z'
 ---
 
 # Patterns: Structural: Decorator
@@ -15,6 +15,13 @@ A.k.a. _Wrapper_
 - There are many ways to enhance the behavior of a class, and these ways can be combined freely
 - Implementing these behavior enhancements in subclasses using behavior is not a viable option
 - By using inheritance, the number of subclasses will quickly go through the roof
+
+
+## Terminology
+
+**Wrappee** &mdash; the class being decorated.
+
+**Decorator** &mdash; the class that adds new behavior to the wrappee.
 
 
 ## Implementation
