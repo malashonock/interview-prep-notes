@@ -2,7 +2,7 @@
 tags: [Patterns]
 title: 'Patterns: Creational: Factory Method'
 created: '2023-10-20T08:08:32.633Z'
-modified: '2023-10-20T09:04:13.438Z'
+modified: '2023-10-20T09:26:01.718Z'
 ---
 
 # Patterns: Creational: Factory Method

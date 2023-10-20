@@ -2,7 +2,7 @@
 tags: [NG/patterns, Patterns]
 title: 'Patterns: Patterns in Angular'
 created: '2023-10-19T15:07:39.221Z'
-modified: '2023-10-20T09:10:25.745Z'
+modified: '2023-10-20T13:02:43.911Z'
 ---
 
 # Patterns: Patterns in Angular
@@ -46,5 +46,31 @@ One of such methods is the factory method that embodies the component instantiat
 By so doing, component construction logic, that is defined by the dependencies specified by the application programmer, are separated from the core NG logic embedded in the framework.
 
 Explicitly, we deal with component factories when creating components dynamically using the `ComponentFactoryResolver` and `ComponentFactory` APIs.
+
+
+## Observer
+
+NG uses RxJs heavily (e.g. in its `EventEmitter`), which is based on the Observer pattern.
+
+RxJs `Subject` = Subject / Publisher in the Observer pattern: 
+- `Subject` keeps track of its observers internally
+- `Subject#next()` = `notifySubscribers(data)`
+- `Subject#subscribe(subscriber)` allows to add a new subscriber
+- `subscribe()` returns the unsubscription fn that can be used to remove the subscriber from the list of observers
+
+RxJs `Observer` interface = `Subscriber` interface in the Observer pattern:
+- `Observer#next(data)` = `update(data)`
+- additionally, RxJs defines separate methods, `error()` and `compolete()`, for finer-grained communication
+
+
+## Decorator
+
+NG uses experimental TS decorators heavily, e.g.:
+- `@NgModule`
+- `@Component`, `@Directive`, `@Pipe`
+- `@Injectable`, `@Inject`
+- `@Input`, `@Output`
+
+E.g. class decorators add internal static methods to the decorated class that are subsequently called by the framework.
 
 
