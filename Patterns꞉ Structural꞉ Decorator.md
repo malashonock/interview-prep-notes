@@ -2,10 +2,12 @@
 tags: [Patterns]
 title: 'Patterns: Structural: Decorator'
 created: '2023-10-20T12:36:47.658Z'
-modified: '2023-10-20T13:09:45.571Z'
+modified: '2023-10-20T13:25:41.802Z'
 ---
 
 # Patterns: Structural: Decorator
+
+[refactoring.guru](https://refactoring.guru/design-patterns/decorator)
 
 A.k.a. _Wrapper_
 
