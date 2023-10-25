@@ -2,7 +2,7 @@
 tags: [Angular/router]
 title: 'NG: Router: Accessing URL information'
 created: '2023-09-11T12:34:44.978Z'
-modified: '2023-10-04T13:39:10.969Z'
+modified: '2023-10-25T11:26:10.334Z'
 ---
 
 # NG: Router: Accessing URL information
@@ -26,7 +26,7 @@ Props of interest are:
 
 **Use case for snapshot**: if you can't repeatedly navigate to various paths using the same component, simply use the route snapshot.
 
-**NB!** [In most cases](https://angular.io/guide/router-tutorial-toh#activated-route-in-action), subscriptions to `ActivatedRoute` observables is not needed, `Router` will handle them on destroy. 
+**NB!** [In most cases](https://angular.io/guide/router-tutorial-toh#observable-parammap-and-component-reuse), unsubscribing from subscriptions to `ActivatedRoute` observables is not needed, `Router` will handle them on destroy. 
 
 **NB!** `ActivatedRoute` observables are never completed, `complete`/`finalize` will not be run.
 
