@@ -2,7 +2,7 @@
 tags: [Angular/directives]
 title: 'NG: Directives: Custom attribute directives'
 created: '2023-10-11T09:38:48.862Z'
-modified: '2023-10-11T11:59:38.815Z'
+modified: '2024-01-04T12:47:33.877Z'
 ---
 
 # NG: Directives: Custom attribute directives
@@ -30,7 +30,8 @@ Both keys and values in the object must be the same **strings** as those used in
   - `'[style.width.px]': '500'`
   - `'(click)': 'onClick($event)'`
 
-**Note**: it's recommended to use `@HostBinding()` and `@HostListener()` instead.
+~~**Note**: it's recommended to use `@HostBinding()` and `@HostListener()` instead.~~ 
+**Updated note:** [angular.dev](https://angular.dev/guide/components/host-elements) now recommends to use `@Directive.host` over `@HostBinding()` and `@HostListener()` wherever possible.
 
 
 ## `@HostBinding()`
