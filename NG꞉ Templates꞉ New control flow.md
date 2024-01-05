@@ -2,7 +2,7 @@
 tags: [Angular/templates, Angular/v17+]
 title: 'NG: Templates: New control flow'
 created: '2024-01-04T14:36:11.222Z'
-modified: '2024-01-04T14:50:04.480Z'
+modified: '2024-01-05T14:38:07.176Z'
 ---
 
 # NG: Templates: New control flow
@@ -11,6 +11,8 @@ modified: '2024-01-04T14:50:04.480Z'
 
 
 ## `@if`
+
+[Angular University](https://blog.angular-university.io/angular-if/)
 
 ```
 @if (a > b) {
@@ -31,6 +33,8 @@ To alias the conditional expression result:
 
 
 ## `@for`
+
+[Angular University](https://blog.angular-university.io/angular-for/)
 
 ```
 @for (item of items; track item.id) {
@@ -60,6 +64,8 @@ To alias the conditional expression result:
 
 
 ## `@switch`
+
+[Angular University](https://blog.angular-university.io/angular-switch/)
 
 ```
 @switch (condition) {
