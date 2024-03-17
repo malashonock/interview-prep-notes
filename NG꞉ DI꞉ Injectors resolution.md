@@ -32,11 +32,11 @@ Order of element injectors resolution:
 
 Order | Provider source | Provider type | Applicable requestors | @Self | @SkipSelf | @Host
 :--- | :--- | :---: | :---: | :---: | :---: | :---: 
-1. Lookup on **self** |  |  |  |  |  | 
+1\. Lookup on **self** |  |  |  |  |  |
 1.1. | Self cmp | **view**Providers | cmp only **(n/a to dirs!)** | @Self start => |  | @Host start =>
 1.2. | Self cmp **dirs** | providers | cmp+dir | ?&darr; |  | ?&darr;
 1.3. | Self cmp | providers | cmp+dir | <= @Self end |  | ?&darr;
-2. Lookup upstream |  |  |  |  |  | 
+2\. Lookup upstream |  |  |  |  |  | 
 2.a. Self is a **ViewChild**? |  |  |  |  |  | 
 2.a.1. | View parent cmp | **view**Providers | cmp+**dir(!)** |  | @SkipSelf start => | <= @Host end
 2.a.2. | View parent cmp **dirs** | providers | cmp+dir |  | ?&darr; | 
@@ -76,9 +76,9 @@ Lookup stops once DI finds a provider, or if it reaches the `NullInjector`.
 
 #### LView hierarchy
 
-[DI examples on Angular.io](https://angular.io/guide/hierarchical-dependency-injection#providing-services-in-component)
-[Misko Hevery on Ivy data structures](https://blog.angular.io/ivys-internal-data-structures-f410509c7480)
-[Angular.dev example](https://angular.dev/guide/di/hierarchical-dependency-injection)
+[DI examples on Angular.io](https://angular.io/guide/hierarchical-dependency-injection#providing-services-in-component)  
+[Misko Hevery on Ivy data structures](https://blog.angular.io/ivys-internal-data-structures-f410509c7480)  
+[Angular.dev example](https://angular.dev/guide/di/hierarchical-dependency-injection)  
 
 To facilitate understanding, the following mental model can be helpful:
 
