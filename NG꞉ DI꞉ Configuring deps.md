@@ -62,7 +62,7 @@ Use cases:
 ## Configuring non-class deps
 
 Define a custom token:
-`export const CUSTOM_TOKEN = InjectionToken<TValue>('token description');`
+`export const CUSTOM_TOKEN = new InjectionToken<TValue>('token description');`
 
 Register (provide) the token at some level:
 `providers: [{ provide: CUSTOM_TOKEN, useValue: someValue }]`
