@@ -42,7 +42,7 @@ Module injectors hierarchy:
  - `bootstrapModule(AppModule)` call in `main.ts` &mdash; in `NgModule`-based apps
  - `bootstrapApplication(AppComponent)` call in `main.ts` &mdash; in standalone apps
 4. **child injectors**: (optionally) created during the instantiation of lazy-loaded routes
-5. **standalone injectors**: created for each standalone component
+5. **standalone injectors**: created for bootstrapped, dynamically created or lazy routed standalone components
 
 **NB!** In `NgModule`-based apps, root injector is a _flattening_ of `@NgModule.providers` arrays of all the modules that can be reached via `@NgModule.imports` of the root module. Child injectors are only for lazy-loaded modules, which are not available when root injector is created.
 
