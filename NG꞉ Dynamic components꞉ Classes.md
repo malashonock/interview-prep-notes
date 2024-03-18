@@ -36,7 +36,7 @@ Extends abstract class `ChangeDetectorRef`.
 Represents an _embedded view_ created from a `TemplateRef`.
 
 Extends `ViewRef` with props:
-- `context`: a context object associated with the `TemplateRef` (it will directive-specific and vary for different templates)
+- `context`: a context object associated with the `TemplateRef` (it will be directive-specific and vary for different templates)
 - `rootNodes`: an array of root DOM nodes within <ng-template>
 
 **Note**: In NG sources, there is actually no distinction between `ViewRef` and `EmbeddedViewRef` &mdash; instead, one single class **`ViewRef$1`** is used that includes `context` and `rootNodes`. It's just that when a `ViewRef` is implied, `context` is `null` and `rootNodes` are `[]`, whereas for `EmbeddedViewRef` they have meaningful values.
