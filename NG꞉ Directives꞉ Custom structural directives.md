@@ -53,7 +53,7 @@ Recipes:
 - inject `TemplateRef` to get reference to the `<ng-template>`
 - inject `ViewContainerRef`
 - to render template content, use `this.viewContainerRef.createEmbeddedView(this.templateRef)`
-- to remove template content, use `this.viewContainer.clear()`
+- to remove template content, use `this.viewContainerRef.clear()`
 
 
 ## Micro-syntax
