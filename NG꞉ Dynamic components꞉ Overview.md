@@ -7,7 +7,7 @@ modified: '2023-10-12T15:34:04.755Z'
 
 # NG: Dynamic components: Overview
 
-[Angular docs](https://angular.io/guide/dynamic-component-loader)
+[Angular docs](https://angular.io/guide/dynamic-component-loader)  
 [`ViewContainerRef` API](https://angular.io/api/core/ViewContainerRef)
 
 In order to load new components at runtime:
