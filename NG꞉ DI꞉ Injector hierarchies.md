@@ -33,7 +33,7 @@ Environment injectors are configured via:
 - `@Injectable` decorator &mdash; for all types of apps
 - `@NgModule.providers` &mdash; for `NgModule`-based apps
 - `providers` array in `ApplicationConfig` (in `main.ts` -> `bootstrapApplication` options)
-- `providers` array in `Route` configuration &mdash; for all types of apps
+- `providers` array in `Route` configuration
 
 Module injectors hierarchy:
 1. **Null injector**: if DI reaches it, NG error is thrown
