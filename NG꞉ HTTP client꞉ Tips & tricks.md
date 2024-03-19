@@ -79,11 +79,9 @@ this.httpClient.post('some/url', data)
 
 [RxJs `retry()`](https://rxjs.dev/api/operators/retry)
 
-Use RxJs `repeat()` operator.
+Use RxJs `retry()` operator.
 
 **NB!** `retry()` works only after the source observable **throws an error**.
-
-**NB!** `retry()` will NOT catch errors! Use `retry()` for that.
 
 Use a similar options object (with `count` and `delay` props + `resetOnSuccess`) as in `repeat()`.
 
@@ -92,7 +90,7 @@ Examples:
 // Retry 3 times,
 // with exponential backoff
 // maxing out at 1 minute
-repeat({ 
+retry({ 
   count: 3,
   delay: (count) => {
     return timer(Math.min(60_000, 2 ^ count * 1000));
