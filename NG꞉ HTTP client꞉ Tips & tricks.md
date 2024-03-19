@@ -61,9 +61,9 @@ this.httpClient.post('some/url', data)
   .pipe(
     repeat({
       delay: (count) => timer(count * 1000),
-      filter((res) => res.status === 'completed')
-      take(1)
-    })
+    }),
+    filter((res) => res.status === 'completed'),
+    take(1),
   );
 ```
 
