@@ -67,7 +67,7 @@ An `@Injectable` can be neither included in this NG module `providers` nor have 
 
 For an NG module driven app - **an array** of root component(s) that should be rendered first when bootstrapping the app.
 
-When there are more than 1 bootstrap component specified, each of the should have its own host element in the `index.html`.
+When there are more than 1 bootstrap component specified, each of them should have its own host element in the `index.html`.
 
 
 ## Frequently used NG modules
