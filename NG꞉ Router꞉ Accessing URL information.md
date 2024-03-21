@@ -9,7 +9,7 @@ modified: '2023-10-25T11:26:10.334Z'
 
 ## Pre-Angular 16
 
-[ActivatedRoute](https://angular.io/api/router/ActivatedRoute)
+[ActivatedRoute](https://angular.io/api/router/ActivatedRoute)  
 [ActivatedRouteSnapshot](https://angular.io/api/router/ActivatedRouteSnapshot)
 
 1. Inject an `ActivatedRoute` instance
