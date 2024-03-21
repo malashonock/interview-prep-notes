@@ -22,7 +22,7 @@ Props of interest are:
 - `fragment`: for hash
 - `data`: for data passed via `resolve` guard
 
-**Use case for observables**: `Router` re-uses component instances on repeated navigations between same component paths. Re-rendering a component if only `id` param has change is expensive &mdash; subscribe to param changes instead (usually, via `switchMap`).
+**Use case for observables**: `Router` re-uses component instances on repeated navigations between same component paths. Re-rendering a component if only `id` param has changed is expensive &mdash; subscribe to param changes instead (usually, via `switchMap`).
 
 **Use case for snapshot**: if you can't repeatedly navigate to various paths using the same component, simply use the route snapshot.
 
