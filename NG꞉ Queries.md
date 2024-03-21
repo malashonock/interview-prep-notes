@@ -61,7 +61,7 @@ An abstract class (class interface) that defines the metadata that can be passed
 
 `View*` queries scan only among the elements used in a component's template (a.k.a. _view DOM_).
 
-`Content*` queries scan amonth the elements projected into the current component (a.k.a. _content DOM_).
+`Content*` queries scan among the elements projected into the current component (a.k.a. _content DOM_).
 
 
 ## `*Child` vs. `*Children` queries
