@@ -34,12 +34,6 @@ b. in the lazy-loaded module:
 `forRoot()` and `forChild()` are different in that they provide different services [see SO post](https://stackoverflow.com/a/56753173).
 
 
-## Accessing URL information (**Angular 16**+)
-
-- **NgModule-based**: add `bindComponentsToInputs: true` to `RouterModule.forRoot(...)`.
-- **Standalone-based**: `provideRouter(...)` + `withComponentInputsBinding()` arg.
-
-
 ## Preloading strategy
 
 In `RouterModule.forRoot(...)`, set the `preloadingStrategy` option:
