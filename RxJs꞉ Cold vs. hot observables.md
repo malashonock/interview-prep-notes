@@ -43,7 +43,7 @@ function makeHot(cold: Observable): Observable {
   return new Observable((observer) => {
     refCount++;
 
-    // When a new observer subscribes to out heated observable,
+    // When a new observer subscribes to our heated observable,
     // subscribe it to the intermediary subject under the hood
     let childSubscription = subject.subscribe(observer);
 
