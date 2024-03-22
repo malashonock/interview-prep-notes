@@ -2,7 +2,7 @@
 tags: [Angular/components, Angular/v16+]
 title: 'NG: Components: Lifecycle: takeUntilDestroyed()'
 created: '2024-01-05T14:48:03.294Z'
-modified: '2024-01-05T15:02:12.432Z'
+modified: '2024-03-22T12:06:03.680Z'
 ---
 
 # NG: Components: Lifecycle: takeUntilDestroyed()
@@ -34,4 +34,24 @@ someObservable.pipe(
 
 Inside C/D/services, `takeUntilDestroyed()` doesn't need any args.
 
-Outside of injection context, `takeUntilDestroyed()` must be passed an instance of `DestroyRef`.
+Inside an injection context, `takeUntilDestroyed()` can be called without args &mdash; implicitly, current `DestroyRef` will be used.
+Outside of injection context, `takeUntilDestroyed()` must be explicitly passed an instance of `DestroyRef`.
+
+
+## DestroyRef
+
+[DestroyRef API](https://angular.io/api/core/DestroyRef)  
+
+`DestroyRef` lets one set cleanup callbacks to run when the corresponding c/d/service is being destroyed.  
+`DestroyRef` is injectable.  
+
+### `onDestroy(callback)`
+
+Signature:  
+```
+onDestroy(callback: () => void) => () => void;
+```
+
+Registers the given callback.  
+Returns the fn that can be called to **unregister** the callback.
+
