@@ -2,7 +2,7 @@
 tags: [Angular/router]
 title: 'NG: Router: Routes configuration'
 created: '2023-09-11T12:21:47.246Z'
-modified: '2023-10-04T13:39:30.515Z'
+modified: '2024-03-22T08:34:55.233Z'
 ---
 
 # NG: Router: Routes configuration
@@ -82,6 +82,14 @@ Component that will be _eagerly_ rendered next to `<router-outlet>`.
 ### `loadChildren` (instead of `component`)
 
 The dynamic import of a _lazy-loaded_ module with its own routing module and `routes`.
+
+The callback fn can import either of:
+- the `NgModule`
+- the `Routes` configuration
+
+### `loadComponent` (instead of `component`)
+
+The dynamic import of a _lazy-loaded **standalone component**_.
 
 ### `children`
 
