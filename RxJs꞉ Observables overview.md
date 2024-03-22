@@ -15,7 +15,7 @@ modified: '2023-10-09T09:52:21.970Z'
 
 An observable is:
 - a lazy push collection of multiple values
-- a template for connecting an Observer (as a Consumer) to a Producer, via a `subsribe` action, resulting in a subscription
+- a template for connecting an Observer (as a Consumer) to a Producer, via a `subscribe` action, resulting in a subscription
 
 
 ## Creating observables
