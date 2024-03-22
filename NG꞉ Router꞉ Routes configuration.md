@@ -66,7 +66,7 @@ Redirects keep **route params** with same signature (e.g. `heroes/:heroId` to `s
 
 Redirects handle **query params and fragments** as follows:
 - when using _absolute_ redirects (starting with `/`), query params & fragment are taken from `redirectTo` route config
-- when using _relative_ redirects, queary params & fragment are taken from the source URL
+- when using _relative_ redirects, query params & fragment are taken from the source URL
 
 
 ### `matcher` (instead of `path` + `pathMatch`)
