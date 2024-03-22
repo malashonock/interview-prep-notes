@@ -19,7 +19,7 @@ modified: '2023-10-04T13:39:33.760Z'
 
 ## Lazy-loaded modules
 
-Additional steps:
+Additional steps:  
 a. in the parent routing module:
   1. in the respective route config, instead of `component`, specify `loadChildren: import('path-to-lazy-loaded-module').then((m) => m.ModuleName)`
 b. in the lazy-loaded module:
