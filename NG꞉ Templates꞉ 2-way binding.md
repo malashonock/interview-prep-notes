@@ -2,7 +2,7 @@
 tags: [Angular/templates]
 title: 'NG: Templates: 2-way binding'
 created: '2023-10-10T13:08:58.504Z'
-modified: '2023-10-10T13:43:17.379Z'
+modified: '2024-03-22T08:45:32.141Z'
 ---
 
 # NG: Templates: 2-way binding
@@ -10,8 +10,8 @@ modified: '2023-10-10T13:43:17.379Z'
 **Syntax**: `[()]` (a.k.a. _banana in a box_)
 
 2-way binding = property binding + event binding:
-- a host component class field is property-bound to child component template (host component -> child template)
-- whenever child component emits a change event, `$event` value is assigned to host component class field
+- a parent component class field is property-bound to child component template (host component -> child template)
+- whenever child component emits a change event, `$event` value is assigned to parent component class field
 
 Example:
 ```
