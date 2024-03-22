@@ -9,7 +9,7 @@ modified: '2024-01-04T14:17:09.706Z'
 
 [angular.dev](https://angular.dev/guide/signals)
 
-**Signal** - a (reactive) wrapper around a value that notifies interested consumers whenever that value changes.
+**Signal** &mdash; a (reactive) wrapper around a value that notifies interested consumers whenever that value changes.
 
 **NB!** Whenever a signal within an `OnPush` component changes its value, NG marks the component for change. 
 
