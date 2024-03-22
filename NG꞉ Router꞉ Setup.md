@@ -12,7 +12,7 @@ modified: '2023-10-04T13:39:33.760Z'
 1. Create the _routing_ `@NgModule`
 2. Define the `Routes` configuration array somewhere (usually, next to `@NgModule` in the same TS module)
 2. **Import** `RouterModule` in the routing module, passing `routes` config to its static `forRoot` method
-3. **Export** `RouterModule` from the routing module
+3. **Export** `RouterModule` from the routing module (to make Router directives available to the importing module without sharing the Router service)
 4. Import routing module to the consuming `@NgModule`
 5. Add `<router-outlet>`s to the consuming module templates as needed (content will be projected right after the tag, not replace it)
 
