@@ -2,7 +2,7 @@
 tags: [Angular/forms]
 title: 'NG: Forms: API - AbstractControl'
 created: '2023-09-20T09:28:40.715Z'
-modified: '2023-10-04T13:37:31.545Z'
+modified: '2024-03-27T12:41:16.923Z'
 ---
 
 # NG: Forms: API - AbstractControl
@@ -119,6 +119,8 @@ Getters:
 Getters:
 - `pristine`: control value has NEVER changed since initialization
 - `dirty`: control's value HAS changed since initialization (at least once)
+
+**NB!** _Programmatic_ changes to a control's value **don't** make it `dirty`!
 
 Setters:
 - `markAsDirty()`
