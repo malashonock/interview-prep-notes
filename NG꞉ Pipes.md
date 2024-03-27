@@ -2,7 +2,7 @@
 tags: [Angular/pipes]
 title: 'NG: Pipes'
 created: '2023-09-21T09:40:25.089Z'
-modified: '2023-10-04T13:39:04.242Z'
+modified: '2024-03-27T12:39:57.667Z'
 ---
 
 # NG: Pipes
@@ -31,7 +31,7 @@ Pipes can be chained.
 
 ## Pure/impure pipes
 
-**Pure** pipes: `transform()` is invoked only when pipe input changes, i.e.:
+**Pure** pipes: `transform()` is invoked only when pipe input changes (resembles OnPush logic), i.e.:
   - if primitive input changes its value
   - if object input changes its **reference**
 
