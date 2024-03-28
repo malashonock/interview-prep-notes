@@ -1,8 +1,8 @@
 ---
-tags: [NG/patterns, Patterns]
+tags: [Angular/patterns, Patterns]
 title: 'Patterns: Patterns in Angular'
 created: '2023-10-19T15:07:39.221Z'
-modified: '2023-10-20T13:02:43.911Z'
+modified: '2024-03-28T10:04:30.984Z'
 ---
 
 # Patterns: Patterns in Angular
