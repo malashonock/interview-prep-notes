@@ -1,11 +1,11 @@
 ---
-tags: [Patterns]
-title: 'Patterns: Inversion of Control'
+tags: [Principles]
+title: 'Principles: Inversion of Control'
 created: '2023-10-19T14:45:14.733Z'
-modified: '2023-10-19T14:56:38.904Z'
+modified: '2024-03-28T07:18:35.797Z'
 ---
 
-# Patterns: Inversion of Control
+# Principles: Inversion of Control
 
 [Definition by M.Fowler](https://martinfowler.com/bliki/InversionOfControl.html)
 
