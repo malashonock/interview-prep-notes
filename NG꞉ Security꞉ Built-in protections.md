@@ -1,8 +1,8 @@
 ---
-tags: [Security]
+tags: [Angular/security, Security]
 title: 'NG: Security: Built-in protections'
 created: '2024-03-28T08:28:54.381Z'
-modified: '2024-03-28T10:03:17.350Z'
+modified: '2024-03-28T10:05:30.313Z'
 ---
 
 # NG: Security: Built-in protections
