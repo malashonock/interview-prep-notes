@@ -2,7 +2,7 @@
 tags: [Angular/queries]
 title: 'NG: Queries'
 created: '2023-10-13T12:59:25.461Z'
-modified: '2023-10-13T14:02:16.431Z'
+modified: '2024-04-02T14:35:51.908Z'
 ---
 
 # NG: Queries
@@ -38,8 +38,15 @@ An abstract class (class interface) that defines the metadata that can be passed
   - any provider class (e.g. a service) defined in the child component tree of the current component
   - any provider defined via a string token
 - `static`:
-  - `true`: to resolve query **before** CD runs
-  - `false` (default): to resolve query **after** CD runs
+  - `true`:
+    - to resolve query once the view is created, but **before** CD runs
+    - usually used with native DOM elements in component template
+    - query will be resolved in `ngOnInit` LCH (no need to wait until `ngAfterViewInit` / `ngAfterContentInit`)
+    - value will be available **regardless** of binding resolution in structural directives like `ngIf`, `ngForOf`  
+  - `false` (default):
+    - to resolve query **after** CD runs
+    - query will only be resolved in `ngAfterViewInit` / `ngAfterContentInit` LCHs
+    - value will reflect changes in structural directives like `ngIf`, `ngForOf`
 - `descendants` **(`Content*` queries only)**:
   - `true` (default): query all descendants of the element
   - `false`: only query direct (first-level) children of the element
