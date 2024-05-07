@@ -28,7 +28,7 @@ They are _not_ class methods &mdash; they are **standalone functions** that must
 
 **Tip**: to run `afterNextRender` / `afterRender` inside class methods, an instance of `Injector` can be injected and passed within the options object.
 
-Traditional LCHs are flushed on a component-by-component / view-by-view basis &mash; `afterNextRender` / `afterRender` are called after NG has finished rendering _all components_ on the page into the DOM.
+Traditional LCHs are flushed on a component-by-component / view-by-view basis &mdash; `afterNextRender` / `afterRender` are called after NG has finished rendering _all components_ on the page into the DOM.
 
 Both hooks have the same signature:
 ```
