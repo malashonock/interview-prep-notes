@@ -7,7 +7,7 @@ modified: '2023-10-12T15:08:20.586Z'
 
 # NG: Content projection: NgTemplateOutlet
 
-[Stephen Cooper talk @AngularConnect](https://www.youtube.com/watch?v=2SnVxPeJdwE)
+[Stephen Cooper talk @AngularConnect](https://www.youtube.com/watch?v=2SnVxPeJdwE)  
 [My version with structural directives](https://stackblitz.com/edit/ngtemplateoutletcontext-xvzh2j?file=src%2Fapp%2Fmy-selector%2Fmy-selector.component.html)
 [Angular docs](https://angular.io/api/common/NgTemplateOutlet)
 
