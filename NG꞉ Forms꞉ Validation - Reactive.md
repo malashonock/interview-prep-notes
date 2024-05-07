@@ -60,4 +60,4 @@ public control = new FormControl('', {
 });
 ```
 
-**NB!**: it's recommended to set `updateOn` for performance optimization, to preven async validator from running on each value change.
+**NB!**: it's recommended to set `updateOn` for performance optimization, to prevent async validator from running on each value change.
