@@ -42,7 +42,7 @@ Called whenever any of the c/d `@Input()`s are set (for the 1st time) or reset (
 
 **NB!**: As long as there are no `@Input()`s or they don't change, `ngOnChanges()` is NOT flushed.
 
-A `SimpleChanges` object is passed a an arg to the hook, each entry of which contains a `SimpleChange` object for a given `@Input()`.
+A `SimpleChanges` object is passed as an arg to the hook, each entry of which contains a `SimpleChange` object for a given `@Input()`.
 
 [`SimpleChange`](https://angular.io/api/core/SimpleChange) props:
 - `previousValue` / `currentValue`

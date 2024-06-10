@@ -24,11 +24,11 @@ modified: '2024-03-22T13:00:21.330Z'
 [Angular.dev](https://angular.dev/guide/components/lifecycle#afterrender-and-afternextrender)
 
 `afterNextRender` / `afterRender` LCHs differ from traditional LCHs.  
-They are _not_ class methods &mdash; they are **standalone functions** that must be called in and _injection context_ (typically, in a Ctor).
+They are _not_ class methods &mdash; they are **standalone functions** that must be called in an _injection context_ (typically, in a Ctor).
 
 **Tip**: to run `afterNextRender` / `afterRender` inside class methods, an instance of `Injector` can be injected and passed within the options object.
 
-Traditional LCHs are flushed on a component-by-component / view-by-view basis &mash; `afterNextRender` / `afterRender` are called after NG has finished rendering _all components_ on the page into the DOM.
+Traditional LCHs are flushed on a component-by-component / view-by-view basis &mdash; `afterNextRender` / `afterRender` are called after NG has finished rendering _all components_ on the page into the DOM.
 
 Both hooks have the same signature:
 ```
