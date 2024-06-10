@@ -2,7 +2,7 @@
 tags: [Angular/inputs, Angular/signals]
 title: 'NG: Signals: Model inputs'
 created: '2024-06-10T15:34:17.087Z'
-modified: '2024-06-10T15:48:43.715Z'
+modified: '2024-06-10T15:53:37.241Z'
 ---
 
 # NG: Signals: Model inputs
@@ -15,7 +15,9 @@ checked = model(false);
 this.checked.set(!this.checked());
 ```
 
-**NB!** When a component sets the value of a model input, this value is also propagated up to the component that is binding a value to this input:
+**NB!** `model(...)` creates not only an input, but also an output suffixed with `...Change` to enable 2-way binding.
+
+When a component sets the value of a model input, this value is also propagated up to the component that is binding a value to this input:
 ```
 // in a parent component's template
 // notice, in case isAdmin is a signal, the entire signal is passed, not its value!
