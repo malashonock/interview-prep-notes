@@ -2,7 +2,7 @@
 tags: [Angular/CD]
 title: 'NG: CD: Strategies'
 created: '2023-09-18T15:07:13.887Z'
-modified: '2023-10-04T13:36:48.931Z'
+modified: '2024-06-11T08:09:44.213Z'
 ---
 
 # NG: CD: Strategies
@@ -40,7 +40,7 @@ Whenever the recursive `detectChanges()` stemming from a `tick()` reaches a comp
 
 CD is run on a component with **OnPush** only if:
 - component's `@Input`s change (via `===` check)
-- NG handles any event (`[event]` binding, `@Output` binding, `@HostListener`) in the component _or any of its children, regardless of their CD strategy_
+- NG handles any event (`(event)` binding, `@Output` binding, `@HostListener`) in the component _or any of its children, regardless of their CD strategy_
 - we triggered CD manually
 
 **NB!** **Mutating** objects assigned to `@Inputs` will _not_ trigger CD:

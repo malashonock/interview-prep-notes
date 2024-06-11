@@ -1,8 +1,8 @@
 ---
-tags: [Angular/queries, Angular/signals]
+tags: [Angular/queries, Angular/signals, Angular/v17+]
 title: 'NG: Signals: Signal queries'
 created: '2024-06-11T06:17:17.269Z'
-modified: '2024-06-11T06:59:05.691Z'
+modified: '2024-06-11T07:22:26.871Z'
 ---
 
 # NG: Signals: Signal queries

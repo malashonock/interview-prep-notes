@@ -1,8 +1,8 @@
 ---
-tags: [Angular/inputs, Angular/signals]
+tags: [Angular/inputs, Angular/signals, Angular/v17+]
 title: 'NG: Signals: Signal inputs'
 created: '2024-06-10T14:12:23.827Z'
-modified: '2024-06-10T15:33:10.161Z'
+modified: '2024-06-11T07:22:24.909Z'
 ---
 
 # NG: Signals: Signal inputs

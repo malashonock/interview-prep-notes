@@ -1,8 +1,8 @@
 ---
-tags: [Angular/signals]
+tags: [Angular/signals, Angular/v17+]
 title: 'NG: Signals: Computed signals'
 created: '2024-01-04T13:08:30.653Z'
-modified: '2024-01-04T14:15:58.388Z'
+modified: '2024-06-11T07:21:32.154Z'
 ---
 
 # NG: Signals: Computed signals

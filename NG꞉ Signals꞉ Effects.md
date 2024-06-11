@@ -1,8 +1,8 @@
 ---
-tags: [Angular/signals]
+tags: [Angular/signals, Angular/v17+]
 title: 'NG: Signals: Effects'
 created: '2024-01-04T13:32:25.457Z'
-modified: '2024-01-04T14:16:50.865Z'
+modified: '2024-06-11T07:22:14.017Z'
 ---
 
 # NG: Signals: Effects

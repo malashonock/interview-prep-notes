@@ -1,8 +1,8 @@
 ---
-tags: [Angular/signals]
+tags: [Angular/signals, Angular/v17+]
 title: 'NG: Signals: RxJs interop'
 created: '2024-01-04T14:18:55.006Z'
-modified: '2024-01-04T14:34:25.625Z'
+modified: '2024-06-11T07:22:22.265Z'
 ---
 
 # NG: Signals: RxJs interop

@@ -1,8 +1,8 @@
 ---
-tags: [Angular/signals]
+tags: [Angular/signals, Angular/v17+]
 title: 'NG: Signals: Overview'
 created: '2024-01-04T12:49:20.080Z'
-modified: '2024-01-04T14:17:09.706Z'
+modified: '2024-06-11T07:22:19.652Z'
 ---
 
 # NG: Signals: Overview

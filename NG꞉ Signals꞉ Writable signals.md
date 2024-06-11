@@ -1,8 +1,8 @@
 ---
-tags: [Angular/signals]
+tags: [Angular/signals, Angular/v17+]
 title: 'NG: Signals: Writable signals'
 created: '2024-01-04T13:07:33.596Z'
-modified: '2024-01-04T14:16:17.262Z'
+modified: '2024-06-11T07:22:32.024Z'
 ---
 
 # NG: Signals: Writable signals
