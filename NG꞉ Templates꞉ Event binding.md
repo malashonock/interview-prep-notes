@@ -1,8 +1,8 @@
 ---
-tags: [Angular/templates]
+tags: [Angular/outputs, Angular/templates]
 title: 'NG: Templates: Event binding'
 created: '2023-09-12T14:16:56.882Z'
-modified: '2023-10-24T09:34:00.691Z'
+modified: '2024-06-17T09:56:00.217Z'
 ---
 
 # NG: Templates: Event binding

@@ -1,8 +1,8 @@
 ---
-tags: [Angular/templates, RxJs]
+tags: [Angular/outputs, Angular/templates, RxJs]
 title: 'NG: Templates: EventEmitter vs. Subject'
 created: '2023-10-09T13:28:25.826Z'
-modified: '2023-10-10T13:43:38.511Z'
+modified: '2024-06-17T09:56:07.236Z'
 ---
 
 # NG: Templates: EventEmitter vs. Subject
